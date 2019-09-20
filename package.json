@@ -1,0 +1,48 @@
+{
+  "name": "static-site-boilerplate",
+  "version": "1.0.0",
+  "author": "hasegayo",
+  "license": "MIT",
+  "description": "My static site boilerplate",
+  "repository": "https://github.com/hasegayo/static-site-boilerplate",
+  "browserslist": [
+    "last 2 versions",
+    "ie >= 11",
+    "Android >= 4"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production webpack && rm dist/assets/js/0.*.js",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --hot"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-runtime": "^6.26.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^6.0.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "glob": "^7.1.4",
+    "html-loader": "^0.5.5",
+    "html-webpack-exclude-assets-plugin": "0.0.7",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "core-js": "^3.2.1",
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1"
+  }
+}

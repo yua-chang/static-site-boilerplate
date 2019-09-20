@@ -1,0 +1,26 @@
+/**
+ * A modern alternative to CSS resets
+ * http://necolas.github.io/normalize.css/
+ */
+@import "~normalize.css";
+
+/**
+ * Header style
+ */
+header {
+  width: 100%;
+  height: 80px;
+  display: grid;
+  background-color: lightcoral;
+  p {
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+/**
+ * Common styles
+ */
+h1 {
+  color: azure;
+}
